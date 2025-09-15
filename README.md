@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Built and Tested project on OpenAI free credit which is currently exhausted because i am not on a paid plan.
+
+So test run this project you can clone to it your PC and generate an API key which you should store in a .env file to see function live.
+
 ## Getting Started
 
 First, run the development server:

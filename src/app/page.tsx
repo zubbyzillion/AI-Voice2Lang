@@ -63,6 +63,12 @@ export default function Home() {
 
   const handleFavourite = () => {
     setFavourite(!favourite);
+    setFavorite(!favorite);
+    if (!favorite) {
+      localStorage.setItem("favoriteTranslation", targetText);
+    } else {
+      localStorage.removeItem("favoriteTranslation");
+    }
   }
 
   return (
