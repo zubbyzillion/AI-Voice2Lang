@@ -4,7 +4,11 @@ import SpeechRecognition, {
 } from "react-speech-recognition";
 import { IconMicrophone } from "@tabler/icons-react";
 
-const SpeechRecognitionComponent = ({ setSourceText }: any) => {
+const SpeechRecognitionComponent = ({
+  setSourceText,
+}: {
+  setSourceText: (text: string) => void
+}) => {
   const { transcript, listening } = useSpeechRecognition();
 
   useEffect(() => {
