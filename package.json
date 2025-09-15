@@ -11,9 +11,11 @@
   "dependencies": {
     "@tabler/icons-react": "^3.34.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.2.2",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.12",
     "next": "15.5.3",
+    "openai": "^5.20.2",
     "preline": "^3.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",

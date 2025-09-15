@@ -2,7 +2,7 @@ import React from "react"
 import { IconLanguage } from "@tabler/icons-react"
 import { defaultEasing } from "motion"
 
-const LanguageSelector = ({selectedLanguage, setSelectedLanguage, languages}) => {
+const LanguageSelector = ({selectedLanguage, setSelectedLanguage, languages}) => (
     <span className="cursor-pointer rounded-full space-x-1 pl-2 bg-black flex items-center flex-row">
         <IconLanguage size={20} />
         <select value={selectedLanguage} onChange={(e) => setSelectedLanguage(e.target.value)} className="bg-black flex flex-row rounded-full py-1 text-white">
@@ -13,6 +13,6 @@ const LanguageSelector = ({selectedLanguage, setSelectedLanguage, languages}) =>
             ))}
         </select>
     </span>
-}
+)
 
 export default LanguageSelector

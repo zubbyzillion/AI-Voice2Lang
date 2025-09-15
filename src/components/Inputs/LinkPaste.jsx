@@ -7,3 +7,5 @@ const LinkPaste = ({handleLinkPaste}) => (
         <input type="text" id="link-input" className="hidden" onChange={handleLinkPaste}></input>
     </label>
 )
+
+export default LinkPaste;
