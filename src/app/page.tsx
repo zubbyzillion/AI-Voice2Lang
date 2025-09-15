@@ -63,8 +63,8 @@ export default function Home() {
 
   const handleFavourite = () => {
     setFavourite(!favourite);
-    setFavorite(!favorite);
-    if (!favorite) {
+    setFavourite(!favourite);
+    if (!favourite) {
       localStorage.setItem("favoriteTranslation", targetText);
     } else {
       localStorage.removeItem("favoriteTranslation");
