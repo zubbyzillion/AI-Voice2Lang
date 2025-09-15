@@ -1,6 +1,9 @@
+// @next/next/no-sync-scripts
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         {children}
-        <script src="./node_modules/preline/dist/preline.js"></script>
+        <Script src="/preline.js" strategy="afterInteractive" />
       </body>
     </html>
   );
